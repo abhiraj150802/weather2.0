@@ -18,7 +18,7 @@ const replaceVal=(tempVal,curVal)=>{
 const server=http.createServer((req,resp)=>{
     if(req.url="/"){
         requests(
-            "https://api.openweathermap.org/data/2.5/weather?q=pune&appid=e3b30f950cd85ec0da53255ac2ce8f4e", )
+            "https://api.openweathermap.org/data/2.5/weather?q=ranchi&appid=e3b30f950cd85ec0da53255ac2ce8f4e", )
         .on('data',  (chunk)=> {
             const objData=JSON.parse(chunk);
             const arrData=[objData];
@@ -36,4 +36,6 @@ const server=http.createServer((req,resp)=>{
 
 });
 
-server.listen(4444,"127.0.0.1")
+const port = process.env.PORT || 3000
+
+server.listen(port)
