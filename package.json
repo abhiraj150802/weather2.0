@@ -9,7 +9,10 @@
   "author": "abhiraj",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.22",
     "requests": "^0.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
